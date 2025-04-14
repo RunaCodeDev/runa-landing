@@ -8,7 +8,10 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-white via-gray-50 to-gray-100">
+    <section
+      id="home"
+      className="relative h-screen flex items-center overflow-hidden bg-gradient-to-b from-white via-gray-50 to-gray-100"
+    >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] rounded-full bg-gradient-to-r from-primary/5 to-blue-500/5 blur-3xl" />

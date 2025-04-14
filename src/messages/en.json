@@ -14,8 +14,23 @@
   },
   "services": {
     "title": "Our Services",
-    "webDev": "Web Development",
-    "mobileDev": "Mobile Development",
-    "consulting": "IT Consulting"
+    "subtitle": "Complete technological solutions",
+    "webDev": {
+      "title": "Web Development",
+      "description": "We create modern, fast and scalable websites and applications"
+    },
+    "mobileDev": {
+      "title": "Mobile Development",
+      "description": "Native and cross-platform apps for iOS and Android"
+    },
+    "cloudSolutions": {
+      "title": "Cloud Solutions",
+      "description": "Cloud architecture and implementation"
+    },
+    "consulting": {
+      "title": "IT Consulting",
+      "description": "Expert advice to optimize your technological processes"
+    },
+    "learnMore": "Learn more"
   }
 }

@@ -14,8 +14,23 @@
   },
   "services": {
     "title": "Nuestros Servicios",
-    "webDev": "Desarrollo Web",
-    "mobileDev": "Desarrollo Móvil",
-    "consulting": "Consultoría IT"
+    "subtitle": "Soluciones tecnológicas completas",
+    "webDev": {
+      "title": "Desarrollo Web",
+      "description": "Creamos sitios web y aplicaciones modernas, rápidas y escalables"
+    },
+    "mobileDev": {
+      "title": "Desarrollo Móvil",
+      "description": "Apps nativas y multiplataforma para iOS y Android"
+    },
+    "cloudSolutions": {
+      "title": "Soluciones Cloud",
+      "description": "Arquitectura e implementación de soluciones en la nube"
+    },
+    "consulting": {
+      "title": "Consultoría IT",
+      "description": "Asesoramiento experto para optimizar tus procesos tecnológicos"
+    },
+    "learnMore": "Conoce más"
   }
 }
