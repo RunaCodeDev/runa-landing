@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Custom Software Development",
+    "subtitle": "Transforming your ideas into digital solutions"
+  },
+  "services": {
+    "title": "Our Services",
+    "webDev": "Web Development",
+    "mobileDev": "Mobile Development",
+    "consulting": "IT Consulting"
+  }
+}

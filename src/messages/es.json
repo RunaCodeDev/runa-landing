@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Desarrollo de Software a Medida",
+    "subtitle": "Transformamos tus ideas en soluciones digitales"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "webDev": "Desarrollo Web",
+    "mobileDev": "Desarrollo Móvil",
+    "consulting": "Consultoría IT"
+  }
+}

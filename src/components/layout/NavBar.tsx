@@ -2,22 +2,31 @@
 
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 interface NavItem {
   label: string;
   to: string;
 }
 
-const navItems: NavItem[] = [
-  { label: "Inicio", to: "home" },
-  { label: "Servicios", to: "services" },
-  { label: "Sobre Nosotros", to: "about" },
-  { label: "Contacto", to: "contact" },
-];
-
 export default function NavBar() {
+  const t = useTranslations("nav");
+  const router = useRouter();
+
+  const navItems: NavItem[] = [
+    { label: t("home"), to: "home" },
+    { label: t("services"), to: "services" },
+    { label: t("about"), to: "about" },
+    { label: t("contact"), to: "contact" },
+  ];
+
+  const changeLanguage = (locale: string) => {
+    router.push(`/${locale}`);
+  };
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/90  backdrop-blur-sm shadow-sm z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <Image
@@ -34,7 +43,7 @@ export default function NavBar() {
                 to={item.to}
                 spy={true}
                 smooth={true}
-                offset={-64} // Ajusta este valor según la altura de tu navbar
+                offset={-64}
                 duration={500}
                 className="cursor-pointer inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 transition-colors border-transparent text-gray-500 hover:text-primary hover:border-primary"
                 activeClass="border-primary-500 text-primary-700"
@@ -42,6 +51,20 @@ export default function NavBar() {
                 {item.label}
               </ScrollLink>
             ))}
+          </div>
+          <div className="flex items-center space-x-2 ">
+            <button
+              onClick={() => changeLanguage("en")}
+              className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+            >
+              EN
+            </button>
+            <button
+              onClick={() => changeLanguage("es")}
+              className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+            >
+              ES
+            </button>
           </div>
         </div>
       </div>
