@@ -38,7 +38,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
           <main className="flex flex-col w-screen mx-auto">
