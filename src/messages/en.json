@@ -32,5 +32,52 @@
       "description": "Expert advice to optimize your technological processes"
     },
     "learnMore": "Learn more"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "subtitle": "Meet our team",
+    "description": "We are a passionate team of developers and designers committed to creating innovative technological solutions that transform businesses and improve lives.",
+    "story": {
+      "title": "Our Story",
+      "content": "Founded in 2025, Runa Code was born with the vision of creating high-quality software that combines technological innovation with a deep understanding of business needs."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "Our mission is to provide exceptional technological solutions that drive the growth and success of our clients, through a collaborative, agile and results-oriented approach."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly explore new technologies and approaches to deliver the best possible solutions."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "We are committed to excellence in every line of code we write and every project we deliver."
+      },
+      "teamwork": {
+        "title": "Teamwork",
+        "description": "We believe in the power of collaboration and combining our diverse skills to achieve exceptional results."
+      },
+      "passion": {
+        "title": "Passion",
+        "description": "We love what we do and that passion is reflected in every project we undertake."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "bio": "Full stack developer with over 8 years of experience in modern web technologies and software architecture."
+      },
+      "member2": {
+        "bio": "UX/UI designer specialized in creating intuitive, accessible and visually appealing user experiences."
+      },
+      "member3": {
+        "bio": "Backend expert with extensive experience in databases, APIs and distributed systems."
+      },
+      "member4": {
+        "bio": "Mobile developer with experience in native and cross-platform applications for iOS and Android."
+      }
+    }
   }
 }

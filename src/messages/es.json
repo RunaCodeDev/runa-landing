@@ -32,5 +32,52 @@
       "description": "Asesoramiento experto para optimizar tus procesos tecnológicos"
     },
     "learnMore": "Conoce más"
+  },
+  "aboutUs": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conoce nuestro equipo",
+    "description": "Somos un equipo apasionado de desarrolladores y diseñadores comprometidos con la creación de soluciones tecnológicas innovadoras que transforman negocios y mejoran vidas.",
+    "story": {
+      "title": "Nuestra Historia",
+      "content": "Fundada en 2025, Runa Code nació con la visión de crear software de alta calidad que combine innovación tecnológica con un profundo entendimiento de las necesidades empresariales."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "Nuestra misión es proporcionar soluciones tecnológicas excepcionales que impulsen el crecimiento y éxito de nuestros clientes, a través de un enfoque colaborativo, ágil y centrado en resultados."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "innovation": {
+        "title": "Innovación",
+        "description": "Constantemente exploramos nuevas tecnologías y enfoques para ofrecer las mejores soluciones posibles."
+      },
+      "quality": {
+        "title": "Calidad",
+        "description": "Nos comprometemos con la excelencia en cada línea de código que escribimos y en cada proyecto que entregamos."
+      },
+      "teamwork": {
+        "title": "Trabajo en Equipo",
+        "description": "Creemos en el poder de la colaboración y en combinar nuestras diversas habilidades para lograr resultados excepcionales."
+      },
+      "passion": {
+        "title": "Pasión",
+        "description": "Amamos lo que hacemos y esa pasión se refleja en cada proyecto que emprendemos."
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "member1": {
+        "bio": "Desarrollador full stack con más de 8 años de experiencia en tecnologías web modernas y arquitectura de software."
+      },
+      "member2": {
+        "bio": "Diseñadora UX/UI especializada en crear experiencias de usuario intuitivas, accesibles y visualmente atractivas."
+      },
+      "member3": {
+        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos."
+      },
+      "member4": {
+        "bio": "Desarrolladora móvil con experiencia en aplicaciones nativas y multiplataforma para iOS y Android."
+      }
+    }
   }
 }
