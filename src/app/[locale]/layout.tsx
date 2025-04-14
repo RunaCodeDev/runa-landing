@@ -20,11 +20,13 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: { locale = "en" },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
+  // Ensure we await the params to get the locale
+  const locale = (await params).locale || "en";
   let messages;
   try {
     messages = (await import(`@/messages/${locale}.json`)).default;
