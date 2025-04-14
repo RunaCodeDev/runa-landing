@@ -39,7 +39,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages} locale={locale}>
-          <main className="flex flex-col max-w-7xl mx-auto">
+          <main className="flex flex-col w-screen mx-auto">
             <NavBar />
             {children}
           </main>

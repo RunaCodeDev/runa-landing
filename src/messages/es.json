@@ -7,7 +7,10 @@
   },
   "hero": {
     "title": "Desarrollo de Software a Medida",
-    "subtitle": "Transformamos tus ideas en soluciones digitales"
+    "subtitle": "Transformamos tus ideas en soluciones digitales",
+    "description": "Somos expertos en crear soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio",
+    "cta": "Comienza tu proyecto",
+    "secondary_cta": "Conoce más"
   },
   "services": {
     "title": "Nuestros Servicios",
