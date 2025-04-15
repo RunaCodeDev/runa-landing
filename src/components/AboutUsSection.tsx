@@ -18,7 +18,7 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Enzo Coschiza",
+    name: "Coschiza Enzo",
     role: "Full Stack Developer",
     bio: "member2.bio",
     gradient: "from-primary to-white",
