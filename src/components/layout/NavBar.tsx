@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface NavItem {
   label: string;
@@ -15,6 +16,7 @@ interface NavItem {
 export default function NavBar() {
   const t = useTranslations("nav");
   const router = useRouter();
+  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -92,13 +94,19 @@ export default function NavBar() {
           <div className="hidden md:flex items-center space-x-2">
             <button
               onClick={() => changeLanguage("en")}
-              className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+              className={`px-3 py-1 rounded-md text-sm font-medium  hover:bg-gray-100 ${
+                pathname === "/en" ? "text-primary" : "text-gray-700"
+              }`}
+              disabled={pathname === "/en"}
             >
               EN
             </button>
             <button
               onClick={() => changeLanguage("es")}
-              className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+              className={`px-3 py-1 rounded-md text-sm font-medium  hover:bg-gray-100 ${
+                pathname === "/es" ? "text-primary" : "text-gray-700"
+              }`}
+              disabled={pathname === "/es"}
             >
               ES
             </button>
@@ -139,7 +147,10 @@ export default function NavBar() {
                   changeLanguage("en");
                   setIsMenuOpen(false);
                 }}
-                className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+                className={`px-3 py-1 rounded-md text-sm font-medium  hover:bg-gray-100 ${
+                  pathname === "/en" ? "text-primary" : "text-gray-700"
+                }`}
+                disabled={pathname === "/en"}
               >
                 EN
               </button>
@@ -148,7 +159,10 @@ export default function NavBar() {
                   changeLanguage("es");
                   setIsMenuOpen(false);
                 }}
-                className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+                className={`px-3 py-1 rounded-md  text-sm font-medium  hover:bg-gray-100 ${
+                  pathname === "/es" ? "text-primary" : "text-gray-700"
+                }`}
+                disabled={pathname === "/es"}
               >
                 ES
               </button>
