@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Hero() {
   const t = useTranslations("hero");
@@ -72,12 +73,18 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <button className="px-8 cursor-pointer py-3 rounded-lg text-lg font-medium bg-gradient-to-r from-primary to-primary-950 text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300">
+              <ScrollLink
+                className="px-8 cursor-pointer py-3 rounded-lg text-lg font-medium bg-gradient-to-r from-primary to-primary-950 text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-300"
+                to="contact"
+              >
                 {t("cta")}
-              </button>
-              <button className="px-8 py-3 cursor-pointer rounded-lg text-lg font-medium bg-white text-primary hover:bg-gray-50 transition-all duration-300 shadow-md">
+              </ScrollLink>
+              <ScrollLink
+                to="about"
+                className="px-8 py-3 cursor-pointer rounded-lg text-lg font-medium bg-white text-primary hover:bg-gray-50 transition-all duration-300 shadow-md"
+              >
                 {t("secondary_cta")}
-              </button>
+              </ScrollLink>
             </motion.div>
           </motion.div>
 

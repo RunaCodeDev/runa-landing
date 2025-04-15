@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 interface NavItem {
   label: string;
@@ -15,9 +16,22 @@ export default function NavBar() {
   const t = useTranslations("nav");
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+  }, []);
+
+  // Cerrar el menú móvil cuando se cambia el tamaño de la ventana a desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const navItems: NavItem[] = [
@@ -34,6 +48,9 @@ export default function NavBar() {
   const scrollToSection = (to: string) => {
     if (!mounted) return;
 
+    // Cerrar el menú móvil al hacer clic en un enlace
+    setIsMenuOpen(false);
+
     // Usar scroller de react-scroll
     scroller.scrollTo(to, {
       duration: 600,
@@ -48,7 +65,7 @@ export default function NavBar() {
         <div className="flex justify-between h-20">
           <div
             onClick={() => scrollToSection("home")}
-            className="cursor-pointer"
+            className="flex items-center cursor-pointer"
           >
             <Image
               src="/logos/runa-logo.png"
@@ -57,7 +74,9 @@ export default function NavBar() {
               alt="Runa Logo"
             />
           </div>
-          <div className="flex justify-center flex-1 space-x-8">
+
+          {/* Menú de escritorio */}
+          <div className="hidden md:flex justify-center flex-1 space-x-8">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -68,7 +87,9 @@ export default function NavBar() {
               </div>
             ))}
           </div>
-          <div className="flex items-center space-x-2 ">
+
+          {/* Selector de idioma para escritorio */}
+          <div className="hidden md:flex items-center space-x-2">
             <button
               onClick={() => changeLanguage("en")}
               className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
@@ -82,8 +103,59 @@ export default function NavBar() {
               ES
             </button>
           </div>
+
+          {/* Botón de menú móvil */}
+          <div className="flex items-center md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Menu className="h-6 w-6" aria-hidden="true" />
+              )}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Menú móvil */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-lg">
+          <div className="px-2 pt-2 pb-3 space-y-1">
+            {navItems.map((item) => (
+              <div
+                key={item.label}
+                onClick={() => scrollToSection(item.to)}
+                className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50"
+              >
+                {item.label}
+              </div>
+            ))}
+            <div className="flex items-center space-x-2 px-3 py-2">
+              <button
+                onClick={() => {
+                  changeLanguage("en");
+                  setIsMenuOpen(false);
+                }}
+                className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => {
+                  changeLanguage("es");
+                  setIsMenuOpen(false);
+                }}
+                className="px-3 py-1 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
+              >
+                ES
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
