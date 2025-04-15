@@ -67,16 +67,10 @@
     "team": {
       "title": "Nuestro Equipo",
       "member1": {
-        "bio": "Desarrollador full stack con más de 8 años de experiencia en tecnologías web modernas y arquitectura de software."
+        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos. Conocimientos solidos en frontend."
       },
       "member2": {
-        "bio": "Diseñadora UX/UI especializada en crear experiencias de usuario intuitivas, accesibles y visualmente atractivas."
-      },
-      "member3": {
-        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos."
-      },
-      "member4": {
-        "bio": "Desarrolladora móvil con experiencia en aplicaciones nativas y multiplataforma para iOS y Android."
+        "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
       }
     }
   }

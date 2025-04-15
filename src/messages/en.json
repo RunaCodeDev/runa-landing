@@ -67,16 +67,10 @@
     "team": {
       "title": "Our Team",
       "member1": {
-        "bio": "Full stack developer with over 8 years of experience in modern web technologies and software architecture."
+        "bio": "Backend development expert with extensive experience in databases, APIs, and distributed systems. Strong knowledge in frontend."
       },
       "member2": {
-        "bio": "UX/UI designer specialized in creating intuitive, accessible and visually appealing user experiences."
-      },
-      "member3": {
-        "bio": "Backend expert with extensive experience in databases, APIs and distributed systems."
-      },
-      "member4": {
-        "bio": "Mobile developer with experience in native and cross-platform applications for iOS and Android."
+        "bio": "Frontend development expert with extensive experience in user interfaces and user experience. Strong knowledge in backend."
       }
     }
   }

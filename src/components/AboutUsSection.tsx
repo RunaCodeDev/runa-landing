@@ -9,19 +9,21 @@ import { Users, Code, Heart, Zap } from "lucide-react";
 const teamMembers = [
   {
     id: 1,
-    name: "Alejandro García",
+    name: "Irala Damian Agustin",
     role: "Full Stack Developer",
     bio: "member1.bio",
-    gradient: "from-blue-500 to-cyan-500",
+    gradient: "from-primary to-primary-950",
     shadowColor: "group-hover:shadow-blue-500/20",
+    image: "/members/irala.png",
   },
   {
     id: 2,
-    name: "María Rodríguez",
-    role: "UX/UI Designer",
+    name: "Enzo Coschiza",
+    role: "Full Stack Developer",
     bio: "member2.bio",
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-primary to-white",
     shadowColor: "group-hover:shadow-purple-500/20",
+    image: "/members/enzo.png",
   },
 ];
 
@@ -175,11 +177,12 @@ export default function AboutUsSection() {
           >
             <div className="aspect-video relative">
               {/* Placeholder para la imagen de la empresa */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center">
-                <span className="text-gray-400 text-lg">
-                  Imagen de la empresa
-                </span>
-              </div>
+              <Image
+                className="absolute inset-0 bg-gradient-to-br from-primary/10 to-blue-500/10 flex items-center justify-center"
+                src="/quienesSomos.png"
+                alt="Imagen de la empresa"
+                fill
+              />
             </div>
           </motion.div>
 
@@ -320,9 +323,14 @@ export default function AboutUsSection() {
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${member.gradient} opacity-10`}
                       />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-gray-400">Foto</span>
-                      </div>
+                      <Image
+                        className="absolute inset-0"
+                        src={member.image}
+                        alt="Foto"
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        quality={100}
+                      />
                     </div>
 
                     {/* Información del miembro */}
