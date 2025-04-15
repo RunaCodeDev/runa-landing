@@ -73,5 +73,38 @@
         "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
       }
     }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto con nosotros",
+    "description": "Estamos aquí para ayudarte con cualquier pregunta o consulta que puedas tener. Por favor, completa el formulario a continuación para ponerte en contacto con nosotros.",
+    "form": {
+      "title": "Contáctanos",
+      "name": "Nombre",
+      "namePlaceholder": "Ingresa tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí",
+      "submit": "Enviar mensaje",
+      "success": {
+        "title": "¡Gracias por tu mensaje!",
+        "message": "Nos pondremos en contacto contigo lo antes posible.",
+        "button": "Enviar otro mensaje"
+      },
+      "error": "Algo salió mal. Por favor, inténtalo de nuevo."
+    },
+    "mapPlaceholder": "Ubicación del mapa",
+    "info": {
+      "email": {
+        "title": "Correo electrónico"
+      },
+      "phone": {
+        "title": "Teléfono"
+      },
+      "address": {
+        "title": "Dirección"
+      }
+    }
   }
 }
