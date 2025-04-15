@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Runa Code",
-  description: "Runa Landing Page",
+  description:
+    "Innovative technological solutions and custom software development. We transform ideas into high-performance web and mobile applications to drive your business forward.",
 };
 
 export default function RootLayout({
