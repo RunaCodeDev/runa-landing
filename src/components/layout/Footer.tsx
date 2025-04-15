@@ -4,15 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
-} from "lucide-react";
+import { Mail, Phone, MapPin, Github, Instagram } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations();

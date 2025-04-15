@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
