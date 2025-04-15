@@ -35,18 +35,30 @@ export default function ContactUsSection() {
     setError("");
 
     try {
-      // Aquí se implementaría la lógica para enviar el formulario
-      // Por ahora, simulamos un envío exitoso después de 1 segundo
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Enviar los datos del formulario a la API
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || t("error"));
+      }
+
       setIsSubmitted(true);
       setFormState({ name: "", email: "", message: "" });
     } catch (err) {
+      console.error("Error al enviar el formulario:", err);
       setError(t("error"));
     } finally {
       setIsSubmitting(false);
     }
   };
-
   const contactInfo = [
     {
       id: "email",
