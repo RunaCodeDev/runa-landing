@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Desarrollo de Software a Medida",
+    "subtitle": "Transformamos tus ideas en soluciones digitales",
+    "description": "Somos expertos en crear soluciones tecnológicas innovadoras que impulsan el crecimiento de tu negocio",
+    "cta": "Comienza tu proyecto",
+    "secondary_cta": "Conoce más"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones tecnológicas completas",
+    "webDev": {
+      "title": "Desarrollo Web",
+      "description": "Creamos sitios web y aplicaciones modernas, rápidas y escalables"
+    },
+    "mobileDev": {
+      "title": "Desarrollo Móvil",
+      "description": "Apps nativas y multiplataforma para iOS y Android"
+    },
+    "cloudSolutions": {
+      "title": "Soluciones Cloud",
+      "description": "Arquitectura e implementación de soluciones en la nube"
+    },
+    "consulting": {
+      "title": "Consultoría IT",
+      "description": "Asesoramiento experto para optimizar tus procesos tecnológicos"
+    },
+    "learnMore": "Conoce más",
+    "technologies": "Tecnologías",
+    "technologiesDescription": "Estas son algunas de las tecnologías que utilizamos para desarrollar soluciones de alta calidad:",
+    "contactForMore": "¿Interesado en nuestras soluciones? Contáctanos para obtener más información sobre cómo podemos ayudarte."
+  },
+  "aboutUs": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conoce nuestro equipo",
+    "description": "Somos un equipo apasionado de desarrolladores y diseñadores comprometidos con la creación de soluciones tecnológicas innovadoras que transforman negocios y mejoran vidas.",
+    "story": {
+      "title": "Nuestra Historia",
+      "content": "Fundada en 2025, Runa Code nació con la visión de crear software de alta calidad que combine innovación tecnológica con un profundo entendimiento de las necesidades empresariales."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "content": "Nuestra misión es proporcionar soluciones tecnológicas excepcionales que impulsen el crecimiento y éxito de nuestros clientes, a través de un enfoque colaborativo, ágil y centrado en resultados."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "innovation": {
+        "title": "Innovación",
+        "description": "Constantemente exploramos nuevas tecnologías y enfoques para ofrecer las mejores soluciones posibles."
+      },
+      "quality": {
+        "title": "Calidad",
+        "description": "Nos comprometemos con la excelencia en cada línea de código que escribimos y en cada proyecto que entregamos."
+      },
+      "teamwork": {
+        "title": "Trabajo en Equipo",
+        "description": "Creemos en el poder de la colaboración y en combinar nuestras diversas habilidades para lograr resultados excepcionales."
+      },
+      "passion": {
+        "title": "Pasión",
+        "description": "Amamos lo que hacemos y esa pasión se refleja en cada proyecto que emprendemos."
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "member1": {
+        "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
+      },
+      "member2": {
+        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos. Conocimientos solidos en frontend."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Ponte en contacto con nosotros",
+    "description": "Estamos aquí para ayudarte con cualquier pregunta o consulta que puedas tener. Por favor, completa el formulario a continuación para ponerte en contacto con nosotros.",
+    "form": {
+      "title": "Contáctanos",
+      "subtitle": "Completa este formulario y nos pondremos en contacto contigo lo antes posible.",
+      "name": "Nombre",
+      "namePlaceholder": "Ingresa tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "Ingresa tu correo electrónico",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí",
+      "submit": "Enviar mensaje",
+      "success": {
+        "title": "¡Gracias por tu mensaje!",
+        "message": "Nos pondremos en contacto contigo lo antes posible.",
+        "button": "Enviar otro mensaje"
+      },
+      "error": "Algo salió mal. Por favor, inténtalo de nuevo."
+    },
+    "mapPlaceholder": "Ubicación del mapa",
+    "info": {
+      "title": "Información de Contacto",
+      "description": "Puedes contactarnos directamente a través de cualquiera de los siguientes medios:",
+      "email": {
+        "title": "Correo electrónico"
+      },
+      "phone": {
+        "title": "Teléfono"
+      },
+      "address": {
+        "title": "Dirección"
+      }
+    }
+  }
+}
