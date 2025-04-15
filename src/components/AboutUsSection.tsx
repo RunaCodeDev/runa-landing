@@ -319,12 +319,12 @@ export default function AboutUsSection() {
                               group-hover:shadow-xl group-hover:-translate-y-1 group-hover:border-primary/10"
                   >
                     {/* Imagen del miembro del equipo */}
-                    <div className="mb-4 overflow-hidden rounded-xl aspect-square relative">
+                    <div className="mb-4 overflow-hidden rounded-xl aspect-square relative group/image">
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${member.gradient} opacity-10`}
                       />
                       <Image
-                        className="absolute inset-0"
+                        className="absolute inset-0 transition-transform duration-500 ease-in-out group-hover/image:scale-110 object-cover"
                         src={member.image}
                         alt="Foto"
                         fill
