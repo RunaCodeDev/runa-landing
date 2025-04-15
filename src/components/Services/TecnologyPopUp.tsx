@@ -103,7 +103,7 @@ export default function TecnologyPopUp({
                     />
                   </div>
                 </div>
-                <span className="text-sm font-medium text-gray-700">
+                <span className="text-sm font-medium text-gray-700 text-center">
                   {tech.name}
                 </span>
               </motion.div>
