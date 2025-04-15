@@ -67,10 +67,10 @@
     "team": {
       "title": "Nuestro Equipo",
       "member1": {
-        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos. Conocimientos solidos en frontend."
+        "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
       },
       "member2": {
-        "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
+        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos. Conocimientos solidos en frontend."
       }
     }
   },
