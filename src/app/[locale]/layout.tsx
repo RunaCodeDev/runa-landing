@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import NavBar from "@/components/layout/NavBar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export default async function LocaleLayout({
@@ -24,6 +25,7 @@ export default async function LocaleLayout({
       <main className="flex flex-col w-screen ">
         <NavBar />
         {children}
+        <Footer />
       </main>
     </NextIntlClientProvider>
   );
