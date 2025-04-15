@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Runa Landing",
+  title: "Runa Code",
   description: "Runa Landing Page",
 };
 

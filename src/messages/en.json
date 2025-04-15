@@ -67,10 +67,10 @@
     "team": {
       "title": "Our Team",
       "member1": {
-        "bio": "Backend development expert with extensive experience in databases, APIs, and distributed systems. Strong knowledge in frontend."
+        "bio": "Frontend development expert with extensive experience in user interfaces and user experience. Strong knowledge in backend."
       },
       "member2": {
-        "bio": "Frontend development expert with extensive experience in user interfaces and user experience. Strong knowledge in backend."
+        "bio": "Backend development expert with extensive experience in databases, APIs, and distributed systems. Strong knowledge in frontend."
       }
     }
   },
