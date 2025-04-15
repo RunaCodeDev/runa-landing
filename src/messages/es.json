@@ -96,6 +96,8 @@
     },
     "mapPlaceholder": "Ubicación del mapa",
     "info": {
+      "title": "Información de Contacto",
+      "description": "Puedes contactarnos directamente a través de cualquiera de los siguientes medios:",
       "email": {
         "title": "Correo electrónico"
       },
