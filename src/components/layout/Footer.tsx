@@ -103,16 +103,16 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <a
+                <Link
                   key={social.name}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-lg transition-all duration-200"
+                  className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-lg transition-all duration-200"
                   aria-label={social.name}
                 >
                   <social.icon className="w-5 h-5" />
-                </a>
+                </Link>
               ))}
             </div>
           </motion.div>

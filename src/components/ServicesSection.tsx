@@ -80,7 +80,7 @@ export default function ServicesSection() {
         className="absolute -bottom-[30%] -left-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-purple-500/5 to-pink-500/5 blur-3xl"
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-15">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-5">
         <div className="text-center max-w-3xl mx-auto mb-20 ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
