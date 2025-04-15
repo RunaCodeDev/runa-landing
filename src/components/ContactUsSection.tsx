@@ -138,7 +138,7 @@ export default function ContactUsSection() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100"
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
               {t("form.title")}
             </h3>
             <div className="bg-white rounded-xl">

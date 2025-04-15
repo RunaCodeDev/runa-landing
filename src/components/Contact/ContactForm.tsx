@@ -94,7 +94,13 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+      <label
+        htmlFor="subtitle"
+        className="block text-sm font-medium text-gray-700 mb-3"
+      >
+        {t("form.subtitle")}
+      </label>
       <div>
         <label
           htmlFor="name"
@@ -102,6 +108,7 @@ export function ContactForm({ onSuccess }: ContactFormProps) {
         >
           {t("form.name")}
         </label>
+
         <input
           id="name"
           {...register("name")}

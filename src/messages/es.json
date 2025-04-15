@@ -80,6 +80,7 @@
     "description": "Estamos aquí para ayudarte con cualquier pregunta o consulta que puedas tener. Por favor, completa el formulario a continuación para ponerte en contacto con nosotros.",
     "form": {
       "title": "Contáctanos",
+      "subtitle": "Completa este formulario y nos pondremos en contacto contigo lo antes posible.",
       "name": "Nombre",
       "namePlaceholder": "Ingresa tu nombre",
       "email": "Correo electrónico",
