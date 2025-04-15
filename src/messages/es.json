@@ -31,7 +31,10 @@
       "title": "Consultoría IT",
       "description": "Asesoramiento experto para optimizar tus procesos tecnológicos"
     },
-    "learnMore": "Conoce más"
+    "learnMore": "Conoce más",
+    "technologies": "Tecnologías",
+    "technologiesDescription": "Estas son algunas de las tecnologías que utilizamos para desarrollar soluciones de alta calidad:",
+    "contactForMore": "¿Interesado en nuestras soluciones? Contáctanos para obtener más información sobre cómo podemos ayudarte."
   },
   "aboutUs": {
     "title": "Sobre Nosotros",

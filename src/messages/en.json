@@ -31,7 +31,10 @@
       "title": "IT Consulting",
       "description": "Expert advice to optimize your technological processes"
     },
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "technologies": "Technologies",
+    "technologiesDescription": "These are some of the technologies we use to develop high-quality solutions:",
+    "contactForMore": "Interested in our solutions? Contact us to learn more about how we can help you."
   },
   "aboutUs": {
     "title": "About Us",

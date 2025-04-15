@@ -14,7 +14,7 @@ const teamMembers = [
     bio: "member1.bio",
     gradient: "from-primary to-primary-950",
     shadowColor: "group-hover:shadow-blue-500/20",
-    image: "/members/irala.png",
+    image: "/members/i.png",
   },
   {
     id: 2,

@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Code2, Smartphone, Cloud, Lightbulb, ArrowRight } from "lucide-react";
+import TecnologyPopUp from "./Services/TecnologyPopUp";
 
 const services = [
   {
@@ -35,6 +37,21 @@ export default function ServicesSection() {
   const t = useTranslations("services");
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
+
+  // State for controlling the technology popup
+  const [selectedService, setSelectedService] = useState<string | null>(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  // Function to handle "Learn more" click
+  const handleLearnMoreClick = (serviceId: string) => {
+    setSelectedService(serviceId);
+    setIsPopupOpen(true);
+  };
+
+  // Function to close the popup
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   return (
     <section
@@ -126,7 +143,10 @@ export default function ServicesSection() {
 
                   {/* Botón "Learn more" */}
                   <div className="absolute bottom-8 left-8 right-8">
-                    <div className="flex items-center text-primary font-medium group/link cursor-pointer">
+                    <div
+                      className="flex items-center text-primary font-medium group/link cursor-pointer"
+                      onClick={() => handleLearnMoreClick(service.id)}
+                    >
                       <span className="group-hover/link:mr-2 transition-all duration-300">
                         {t("learnMore")}
                       </span>
@@ -139,6 +159,13 @@ export default function ServicesSection() {
           ))}
         </div>
       </div>
+
+      {/* Technology Popup */}
+      <TecnologyPopUp
+        serviceId={selectedService}
+        isOpen={isPopupOpen}
+        onClose={handleClosePopup}
+      />
     </section>
   );
 }
