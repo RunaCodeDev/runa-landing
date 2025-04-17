@@ -26,5 +26,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/(es|en)/:path*"],
+  matcher: ["/", "/(es|en)/:path*", "!/sitemap.xml", "!/robots.txt"],
 };
