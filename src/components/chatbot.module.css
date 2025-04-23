@@ -1,0 +1,9 @@
+.chatbotContainer {
+  /* Este contenedor puede estar vacío ya que el chatbot se maneja con la librería */
+  position: relative;
+  z-index: 1000;
+}
+
+.n8n-chat-window-footer a {
+  display: none !important;
+}
