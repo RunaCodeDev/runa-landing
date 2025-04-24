@@ -37,7 +37,7 @@ export default function TypewriterEffect({
       <p className="text-sm">
         {displayText}
         {!isComplete && (
-          <span className="inline-block w-2 h-4 ml-1 bg-current animate-pulse" />
+          <span className="inline-block w-1 h-4 ml-1 bg-current animate-pulse" />
         )}
       </p>
     </div>
