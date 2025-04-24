@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import NavBar from "@/components/layout/NavBar";
 import Footer from "@/components/layout/Footer";
-import { Chatbot } from "@/components/chatbot";
+import FloatingChatbot from "@/components/Chatbot/FloatingChatbot";
 import "./globals.css";
 
 export default async function LocaleLayout({
@@ -26,7 +26,7 @@ export default async function LocaleLayout({
         <NavBar />
         {children}
         <Footer />
-        <Chatbot />
+        <FloatingChatbot />
       </main>
     </NextIntlClientProvider>
   );
