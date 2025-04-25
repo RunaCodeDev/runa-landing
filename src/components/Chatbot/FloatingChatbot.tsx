@@ -85,14 +85,17 @@ export default function FloatingChatbot() {
     ]);
 
     try {
-      const response = await fetch("http://localhost:5678/webhook/chatbot", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": `${process.env.NEXT_PUBLIC_API_KEY}`,
-        },
-        body: JSON.stringify({ message: userMessage.text }),
-      });
+      const response = await fetch(
+        "https://n8n.runa-code.com/webhook/chatbot",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-token": `${process.env.NEXT_PUBLIC_API_KEY}`,
+          },
+          body: JSON.stringify({ message: userMessage.text }),
+        }
+      );
 
       const data = await response.json();
       const botResponse =
