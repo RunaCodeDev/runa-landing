@@ -17,6 +17,21 @@ export const metadata: Metadata = {
   title: "Runa Code",
   description:
     "Innovative technological solutions and custom software development. We transform ideas into high-performance web and mobile applications to drive your business forward.",
+  metadataBase: new URL("https://runa-code.com"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/logos/runa-logo.png",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/logos/runa-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Runa Code Logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

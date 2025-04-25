@@ -12,6 +12,12 @@
     "cta": "Start your project",
     "secondary_cta": "Learn more"
   },
+  "floatingChatbot": {
+    "welcome": "Need help with your project?",
+    "firstMessage": "Hello! I'm Runa's virtual assistant. How can I help you with your technological project today?",
+    "name": "Runa's virtual assistant",
+    "inputPlaceholder": "Write your message here"
+  },
   "services": {
     "title": "Our Services",
     "subtitle": "Complete technological solutions",
