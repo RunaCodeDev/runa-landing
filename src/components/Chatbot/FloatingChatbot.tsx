@@ -91,7 +91,7 @@ export default function FloatingChatbot() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "x-api-token": `${process.env.API_BOT_KEY}`,
+            "x-api-token": `${process.env.NEXT_PUBLIC_API_BOT_KEY}`,
           },
           body: JSON.stringify({ message: userMessage.text }),
         }
