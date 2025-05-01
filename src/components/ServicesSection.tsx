@@ -3,7 +3,14 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Code2, Smartphone, Cloud, Lightbulb, ArrowRight } from "lucide-react";
+import {
+  Code2,
+  Smartphone,
+  Cloud,
+  Lightbulb,
+  ArrowRight,
+  Bot,
+} from "lucide-react";
 import TecnologyPopUp from "./Services/TecnologyPopUp";
 
 const services = [
@@ -12,6 +19,12 @@ const services = [
     icon: Code2,
     gradient: "from-blue-500 to-cyan-500",
     shadowColor: "group-hover:shadow-blue-500/20",
+  },
+  {
+    id: "automation",
+    icon: Bot,
+    gradient: "from-emerald-500 to-teal-500",
+    shadowColor: "group-hover:shadow-emerald-500/20",
   },
   {
     id: "mobileDev",
@@ -104,7 +117,7 @@ export default function ServicesSection() {
         </div>
 
         <div
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 
+          className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 
         "
         >
           {services.map((service, index) => (
@@ -142,17 +155,19 @@ export default function ServicesSection() {
                   </p>
 
                   {/* Botón "Learn more" */}
-                  <div className="absolute bottom-8 left-8 right-8">
-                    <div
-                      className="flex items-center text-primary font-medium group/link cursor-pointer"
-                      onClick={() => handleLearnMoreClick(service.id)}
-                    >
-                      <span className="group-hover/link:mr-2 transition-all duration-300">
-                        {t("learnMore")}
-                      </span>
-                      <ArrowRight className="w-4 h-4 opacity-0 -ml-4 group-hover/link:opacity-100 group-hover/link:ml-1 transition-all duration-300" />
+                  {service.id !== "automation" && (
+                    <div className="absolute bottom-8 left-8 right-8">
+                      <div
+                        className="flex items-center text-primary font-medium group/link cursor-pointer"
+                        onClick={() => handleLearnMoreClick(service.id)}
+                      >
+                        <span className="group-hover/link:mr-2 transition-all duration-300">
+                          {t("learnMore")}
+                        </span>
+                        <ArrowRight className="w-4 h-4 opacity-0 -ml-4 group-hover/link:opacity-100 group-hover/link:ml-1 transition-all duration-300" />
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
             </motion.div>

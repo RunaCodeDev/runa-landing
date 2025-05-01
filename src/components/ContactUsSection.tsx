@@ -14,7 +14,7 @@ export default function ContactUsSection() {
     {
       id: "email",
       icon: Mail,
-      value: "runacode0@gmail.com",
+      value: "runacode@runa-code.com",
       gradient: "from-blue-500 to-cyan-500",
       shadowColor: "group-hover:shadow-blue-500/20",
     },
