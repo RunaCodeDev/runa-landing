@@ -37,6 +37,10 @@
       "title": "IT Consulting",
       "description": "Expert advice to optimize your technological processes"
     },
+    "automation": {
+      "title": "Intelligent Automation",
+      "description": "Optimize your processes with automated solutions and intelligent virtual assistants"
+    },
     "learnMore": "Learn more",
     "technologies": "Technologies",
     "technologiesDescription": "These are some of the technologies we use to develop high-quality solutions:",

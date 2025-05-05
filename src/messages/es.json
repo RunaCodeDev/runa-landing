@@ -37,6 +37,10 @@
       "title": "Consultoría IT",
       "description": "Asesoramiento experto para optimizar tus procesos tecnológicos"
     },
+    "automation": {
+      "title": "Automatización Inteligente",
+      "description": "Optimiza tus procesos con soluciones automatizadas y asistentes virtuales inteligentes"
+    },
     "learnMore": "Conoce más",
     "technologies": "Tecnologías",
     "technologiesDescription": "Estas son algunas de las tecnologías que utilizamos para desarrollar soluciones de alta calidad:",

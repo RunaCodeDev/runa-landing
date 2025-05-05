@@ -24,7 +24,7 @@ export default function Footer() {
     {
       id: "email",
       icon: Mail,
-      value: "runacode0@gmail.com",
+      value: "runacode@runa-code.com",
     },
     {
       id: "phone",
