@@ -52,7 +52,7 @@
     "description": "Somos un equipo apasionado de desarrolladores y diseñadores comprometidos con la creación de soluciones tecnológicas innovadoras que transforman negocios y mejoran vidas.",
     "story": {
       "title": "Nuestra Historia",
-      "content": "Fundada en 2025, Runa Code nació con la visión de crear software de alta calidad que combine innovación tecnológica con un profundo entendimiento de las necesidades empresariales."
+      "content": "Fundada en 2024, Runa Code nació con la visión de crear software de alta calidad que combine innovación tecnológica con un profundo entendimiento de las necesidades empresariales."
     },
     "mission": {
       "title": "Nuestra Misión",
@@ -80,10 +80,13 @@
     "team": {
       "title": "Nuestro Equipo",
       "member1": {
-        "bio": "Experto en desarrollo frontend con amplia experiencia en interfaces de usuario y experiencia de usuario. Conocimientos solidos en backend."
+        "bio": "Especialista en desarrollo frontend con enfoque en diseño de interfaces intuitivas y experiencia de usuario. Aporta además conocimientos sólidos en desarrollo backend para soluciones completas."
       },
       "member2": {
-        "bio": "Experto en desarrollo backend con amplia experiencia en bases de datos, APIs y sistemas distribuidos. Conocimientos solidos en frontend."
+        "bio": "Desarrollador backend con sólida experiencia en diseño de APIs, manejo de bases de datos y arquitectura de sistemas distribuidos. También cuenta con competencias en frontend para ofrecer soluciones integrales."
+      },
+      "member3": {
+        "bio": "Desarrollador versátil con enfoque en innovación, experiencia en diseño de interfaces modernas y buen ojo para la experiencia de usuario. Integra conocimientos en backend y siempre está explorando nuevas tecnologías para estar un paso adelante."
       }
     }
   },
