@@ -25,6 +25,15 @@ const teamMembers = [
     shadowColor: "group-hover:shadow-purple-500/20",
     image: "/members/enzo.png",
   },
+  {
+    id: 3,
+    name: "Dylan Tymkiw",
+    role: "Full Stack Developer",
+    bio: "member3.bio",
+    gradient: "from-primary to-white",
+    shadowColor: "group-hover:shadow-purple-500/20",
+    image: "/members/dylan.jpeg",
+  },
 ];
 
 // Valores de la empresa
@@ -299,7 +308,7 @@ export default function AboutUsSection() {
             {t("team.title")}
           </motion.h3>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.id}
