@@ -32,7 +32,7 @@ const teamMembers = [
     bio: "member3.bio",
     gradient: "from-primary to-white",
     shadowColor: "group-hover:shadow-purple-500/20",
-    image: "/members/dylan.jpeg",
+    image: "/members/dylan.png",
   },
 ];
 
@@ -60,7 +60,7 @@ const companyValues = [
     id: "passion",
     icon: Heart,
     gradient: "from-amber-500 to-orange-500",
-    shadowColor: "group-hover:shadow-amber-500/20",
+    shadowColor: "group-hover:shadow-purple-500/20",
   },
 ];
 
