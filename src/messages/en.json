@@ -5,6 +5,59 @@
     "about": "About Us",
     "contact": "Contact"
   },
+  "TrustOnUsSection": {
+    "title": "They Trusted Us",
+    "subtitle": "We are proud to have collaborated with leading companies and innovative startups.",
+    "companyLogoAlt": "{companyName} logo",
+    "projectScreenshotAlt": "Screenshot {index} of the project for {companyName}",
+    "companies": [
+      {
+        "id": 1,
+        "name": "Anthogar",
+        "logoUrl": "/logos/LogoPNG.png",
+        "description": "Comprehensive web platform to optimize inventory, customers, sales, and finances. With our solution, your company will be able to:",
+        "points": [
+          "Optimize stock and operations in real time.",
+          "Strengthen customer management and relationships.",
+          "Maximize sales with reports and automation.",
+          "Make strategic decisions with financial dashboards.",
+          "Data security, scalability, and specialized support."
+        ],
+        "projectImageUrls": [
+          "/appScreens/anthogar/login.png",
+          "/appScreens/anthogar/1.png",
+          "/appScreens/anthogar/2.png",
+          "/appScreens/anthogar/3.png",
+          "/appScreens/anthogar/4.png",
+          "/appScreens/anthogar/5.png",
+          "/appScreens/anthogar/6.png"
+        ],
+        "instagramUrl": "https://www.instagram.com/anthogar_muebleria/"
+      },
+      {
+        "id": 2,
+        "name": "Grupo Distrigas",
+        "logoUrl": "/logos/distrigasLogo.jfif",
+        "description": "Comprehensive Traceability System for Gas Refilling and Fire Extinguisher Maintenance: Real-Time Audited Security\\n\\nSpecialized platform for automated management of technical services for businesses, featuring:",
+        "points": [
+          "Centralized operations control: Single dashboard to monitor refills, preventive maintenance, fire extinguisher expirations, and current certifications.",
+          "360° document traceability: Digital history of each device (service dates, responsible technician, gases used, next inspection).",
+          "Smart alerts: Automatic notifications for charge expirations, anomalous pressures, or legal requirements (ISO 11602/NFPA 10 standard).",
+          "Make strategic decisions with financial dashboards."
+        ],
+        "projectImageUrls": [
+          "/appScreens/distrigas/2.png",
+          "/appScreens/distrigas/1.png",
+          "/appScreens/distrigas/3.png",
+          "/appScreens/distrigas/4.png",
+          "/appScreens/distrigas/5.png",
+          "/appScreens/distrigas/6.png",
+          "/appScreens/distrigas/7.png"
+        ],
+        "instagramUrl": "https://www.instagram.com/grupodistrigas/"
+      }
+    ]
+  },
   "hero": {
     "title": "Custom Software Development",
     "subtitle": "Transforming your ideas into digital solutions",

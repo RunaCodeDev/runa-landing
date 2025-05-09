@@ -5,6 +5,59 @@
     "about": "Sobre Nosotros",
     "contact": "Contacto"
   },
+  "TrustOnUsSection": {
+    "title": "Confiaron en Nosotros",
+    "subtitle": "Estamos orgullosos de haber colaborado con empresas líderes y startups innovadoras.",
+    "companyLogoAlt": "Logo de {companyName}",
+    "projectScreenshotAlt": "Captura de pantalla {index} del proyecto para {companyName}",
+    "companies": [
+      {
+        "id": 1,
+        "name": "Anthogar",
+        "logoUrl": "/logos/LogoPNG.png",
+        "description": "Plataforma web integral para optimizar inventario, clientes, ventas y finanzas. Con nuestra solución, su empresa podrá:",
+        "points": [
+          "Optimizar stock y operaciones en tiempo real.",
+          "Fortalecer la gestión y relación con clientes.",
+          "Maximizar ventas con reportes y automatización.",
+          "Tomar decisiones estratégicas con dashboards financieros.",
+          "Seguridad de datos, escalabilidad y soporte especializado."
+        ],
+        "projectImageUrls": [
+          "/appScreens/anthogar/login.png",
+          "/appScreens/anthogar/1.png",
+          "/appScreens/anthogar/2.png",
+          "/appScreens/anthogar/3.png",
+          "/appScreens/anthogar/4.png",
+          "/appScreens/anthogar/5.png",
+          "/appScreens/anthogar/6.png"
+        ],
+        "instagramUrl": "https://www.instagram.com/anthogar_muebleria/"
+      },
+      {
+        "id": 2,
+        "name": "Grupo Distrigas",
+        "logoUrl": "/logos/distrigasLogo.jfif",
+        "description": "Sistema Integral de Trazabilidad para Recarga de Gases y Mantenimiento de Matafuegos: Seguridad Auditada en Tiempo Real\\n\\nPlataforma especializada en la gestión automatizada de servicios técnicos para comercios, con:",
+        "points": [
+          "Control centralizado de operaciones: Dashboard único para monitorear recargas, mantenimientos preventivos, vencimientos de matafuegos y certificaciones vigentes.",
+          "Trazabilidad documental 360°: Historial digital de cada dispositivo (fechas de servicio, técnico responsable, gases utilizados, próxima inspección).",
+          "Alertas inteligentes: Notificaciones automáticas por vencimientos de carga, presiones anómalas o requerimientos legales (Norma ISO 11602/NFPA 10).",
+          "Tomar decisiones estratégicas con dashboards financieros."
+        ],
+        "projectImageUrls": [
+          "/appScreens/distrigas/2.png",
+          "/appScreens/distrigas/1.png",
+          "/appScreens/distrigas/3.png",
+          "/appScreens/distrigas/4.png",
+          "/appScreens/distrigas/5.png",
+          "/appScreens/distrigas/6.png",
+          "/appScreens/distrigas/7.png"
+        ],
+        "instagramUrl": "https://www.instagram.com/grupodistrigas/"
+      }
+    ]
+  },
   "hero": {
     "title": "Desarrollo de Software a Medida",
     "subtitle": "Transformamos tus ideas en soluciones digitales",
