@@ -40,6 +40,7 @@ export default function NavBar() {
     { label: t("home"), to: "home" },
     { label: t("services"), to: "services" },
     { label: t("about"), to: "about" },
+    { label: t("trustOnUs"), to: "trust-us" },
     { label: t("contact"), to: "contact" },
   ];
 
