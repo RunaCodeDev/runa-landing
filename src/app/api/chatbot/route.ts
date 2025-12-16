@@ -4,6 +4,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     const userMessage = body.message;
+    const sessionId = body.sessionId;
 
     // Prepare headers with proper type handling
     const headers = new Headers({
@@ -16,11 +17,17 @@ export async function POST(request: Request) {
     }
 
     // Aquí usamos la API key del servidor, no expuesta al cliente
-    const response = await fetch("https://n8n.runa-code.com/webhook/chatbot", {
-      method: "POST",
-      headers,
-      body: JSON.stringify({ message: userMessage }),
-    });
+    const response = await fetch(
+      "https://n8n-runa.runa-code.com/webhook/chatbot-runa",
+      {
+        method: "POST",
+        headers,
+        body: JSON.stringify({
+          message: userMessage,
+          sessionId: sessionId,
+        }),
+      }
+    );
 
     const data = await response.json();
 

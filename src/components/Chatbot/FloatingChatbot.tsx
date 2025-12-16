@@ -19,6 +19,27 @@ interface Message {
   isTyping?: boolean;
 }
 
+// Función para generar un session ID único
+const generateSessionId = (): string => {
+  return `session_${Date.now()}_${Math.random().toString(36).substring(2, 15)}`;
+};
+
+// Función para obtener o crear un session ID persistente
+const getOrCreateSessionId = (): string => {
+  const SESSION_KEY = "runa_chatbot_session_id";
+
+  // Intentar obtener el session ID existente
+  let sessionId = localStorage.getItem(SESSION_KEY);
+
+  // Si no existe, crear uno nuevo
+  if (!sessionId) {
+    sessionId = generateSessionId();
+    localStorage.setItem(SESSION_KEY, sessionId);
+  }
+
+  return sessionId;
+};
+
 export default function FloatingChatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -32,9 +53,15 @@ export default function FloatingChatbot() {
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(true);
+  const [sessionId, setSessionId] = useState<string>("");
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Inicializar session ID al montar el componente
+  useEffect(() => {
+    setSessionId(getOrCreateSessionId());
+  }, []);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -91,7 +118,10 @@ export default function FloatingChatbot() {
           "Content-Type": "application/json",
           "x-api-token": `${process.env.NEXT_PUBLIC_API_BOT_KEY}`,
         },
-        body: JSON.stringify({ message: userMessage.text }),
+        body: JSON.stringify({
+          message: userMessage.text,
+          sessionId: sessionId,
+        }),
       });
 
       const data = await response.json();
