@@ -19,7 +19,10 @@ export async function POST(request: Request) {
     console.log("Enviando mensaje al chatbot:", userMessage);
 
     console.log("Usando sessionId:", sessionId);
-    console.log("Usando API Key:", process.env.API_BOT_KEY ? "Sí" : "No");
+    console.log(
+      "Usando API Key:",
+      process.env.API_BOT_KEY ? "Sí usa" : "No usa"
+    );
     console.log("Headers:", Array.from(headers.entries()));
 
     // Aquí usamos la API key del servidor, no expuesta al cliente
